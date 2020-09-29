@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/******************************************************************************
+  基本スタイル
+******************************************************************************/
+/* 変数
+--------------------------------------------- */
+/* ブラウザスタイル解除
+--------------------------------------------- */
+html, body {
+  height: 100%; }
+
+body, h1, h2, h3, h4, h5, table, th, td, ul, li, ol, dl, dt, dd, form, p, table, th, td {
+  border-style: none;
+  font-size: 100%;
+  font-weight: normal;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+o
+* html body {
+  font-size: 100%; }
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom; }
+
+a img {
+  border-style: none; }
+
+input, textArea, select, button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-style: none;
+  font-size: 16px;
+  font-weight: normal;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #5F2201;
+  font-weight: bold;
+  text-decoration: none; }
+
+a, button {
+  cursor: pointer; }
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #000; }
+
+/* 見出し
+--------------------------------------------- */
+.heading2 {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: #5F2201; }
+
+@media screen and (max-width: 999px) {
+  .heading2 {
+    font-size: 20px; } }
+/******************************************************************************
+  コンテンツ
+******************************************************************************/
+/* ヘッダー
+--------------------------------------------- */
+.header {
+  width: 100%;
+  height: 80px; }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+    max-width: 92%;
+    height: 100%;
+    margin: 0 auto; }
+
+.sp-menu-icon {
+  display: none; }
+
+/* グロナビ
+--------------------------------------------- */
+.gnav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px; }
+.gnav__item {
+  font-size: 18px; }
+
+/* メインビジュアル
+--------------------------------------------- */
+.mv {
+  margin-bottom: 100px; }
+  .mv__img {
+    max-width: 1440px;
+    margin: 0 auto; }
+
+/* Skill
+--------------------------------------------- */
+.skill {
+  margin-bottom: 100px; }
+  .skill__inner {
+    width: 980px;
+    max-width: 92%;
+    margin: 0 auto; }
+  .skill__h2 {
+    text-align: center;
+    margin-bottom: 100px; }
+  .skill__itbox {
+    display: flex;
+    justify-content: space-between; }
+    .skill__itbox-reverse {
+      flex-direction: row-reverse; }
+    .skill__itbox + .skill__itbox {
+      margin-top: 85px; }
+  .skill__img {
+    width: 400px;
+    max-width: 100%;
+    height: auto; }
+  .skill__txt {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    line-height: 27px; }
+
+/* About
+--------------------------------------------- */
+.about {
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  background-color: #FFF3DD; }
+  .about__inner {
+    width: 980px;
+    max-width: 92%;
+    margin: 0 auto; }
+  .about__h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px; }
+  .about__box {
+    display: flex;
+    justify-content: space-between;
+    width: 804px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+  .about__img {
+    text-align: center;
+    margin-bottom: 30px; }
+  .about__txt {
+    font-size: 16px;
+    text-align: center; }
+
+/* Contact
+--------------------------------------------- */
+.contact {
+  margin-bottom: 100px; }
+  .contact__inner {
+    width: 800px;
+    max-width: 92%;
+    margin: 0 auto; }
+  .contact__h2 {
+    text-align: center;
+    margin-bottom: 50px; }
+  .contact__itbbox {
+    display: flex;
+    justify-content: space-between; }
+  .contact__tb {
+    margin-top: 102px;
+    padding-right: 58px; }
+  .contact__txt {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 30px; }
+
+/* フッター
+--------------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #B9B9B9; }
+  .footer__copy {
+    font-size: 12px;
+    color: #fff; }
+
+/*ボタン
+--------------------------------------------- */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5F2201;
+  background-color: #fff;
+  border: 3px solid #5F2201;
+  border-radius: 25px;
+  margin: 0 auto; }
+  .btn-more {
+    width: 120px;
+    height: 50px; }
+  .btn-map {
+    width: 100px;
+    height: 50px; }
+
+/******************************************************************************
+  コンテンツ（レスポンシブ）
+******************************************************************************/
+@media screen and (max-width: 999px) {
+  .header {
+    background-color: #fff;
+    height: 60px;
+    position: relative; }
+    .header__logo {
+      width: 125px;
+      height: auto; }
+
+  /* SPメニュー
+  --------------------------------------------- */
+  .sp-menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    z-index: 99; }
+
+  .sp-menu-list {
+    background-color: #DDDDDD;
+    padding-top: 160px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: absolute;
+    top: 0; }
+
+  .sp-menu-item {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1;
+    color: #5F2201; }
+
+  .sp-menu-item + .sp-menu-item {
+    margin-top: 120px; }
+
+  .gnav {
+    display: none; }
+
+  .mv {
+    margin-bottom: 50px; }
+
+  .skill {
+    margin-bottom: 40px; }
+    .skill__h2 {
+      margin-bottom: 40px; }
+    .skill__itbox {
+      display: block; }
+      .skill__itbox + .skill__itbox {
+        margin-top: 45px; }
+    .skill__img {
+      margin: 0 auto;
+      margin-bottom: 25px; }
+    .skill__txt {
+      margin: 0 auto;
+      font-size: 15px;
+      line-height: 26px; }
+
+  .about {
+    padding-bottom: 50px;
+    margin-bottom: 50px; }
+    .about__h2 {
+      padding-top: 50px;
+      margin-bottom: 40px; }
+    .about__box {
+      display: block; }
+    .about__itbox {
+      margin-bottom: 45px; }
+    .about__img {
+      width: 250px;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .about__txt {
+      font-size: 15px; }
+
+  .contact {
+    margin-bottom: 50px; }
+    .contact__h2 {
+      padding-top: 0;
+      margin-bottom: 40px; }
+    .contact__itbbox {
+      display: block; }
+    .contact__img {
+      text-align: center;
+      margin-bottom: 50px; }
+    .contact__tb {
+      margin-top: 0;
+      padding-right: 0; }
+    .contact__txt {
+      text-align: center;
+      font-size: 15px; }
+
+  .footer {
+    height: 30px; } }
